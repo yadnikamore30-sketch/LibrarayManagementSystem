@@ -1,0 +1,102 @@
+PROJECT TITLE
+Library Management System
+
+OBJECTIVE
+To develop a Java-based Library Management System that helps manage books,
+readers, book issuing, book returns, and report generation efficiently.
+
+MODULES
+
+1. Login Module
+   - Staff/Admin login
+
+2. Book Management Module
+   - Add Book
+   - Update Book
+   - Delete Book
+   - View Books
+
+3. Reader Management Module
+   - Add Reader
+   - Update Reader
+   - Delete Reader
+   - View Readers
+
+4. Issue Book Module
+   - Issue books to readers
+   - Store issue details
+
+5. Return Book Module
+   - Return issued books
+   - Update availability
+
+6. Search Module
+   - Search books
+   - Search readers
+
+7. Reports Module
+   - Issued books report
+   - Returned books report
+   - Available books report
+
+TECHNOLOGIES USED
+
+- Java
+- Swing
+- MySQL
+- JDBC
+
+APPLICATION FLOW
+
+Login
+  ↓
+Dashboard
+  ↓
+Books / Readers
+  ↓
+Issue & Return
+  ↓
+Reports
+
+DATABASE TABLES
+
+1. STAFF
+--------------------------------
+staff_id
+name
+username
+password
+role
+
+2. READERS
+--------------------------------
+reader_id
+name
+phone
+email
+address
+
+3. BOOKS
+--------------------------------
+book_id
+title
+author
+publisher_id
+category
+quantity
+
+4. PUBLISHER
+--------------------------------
+publisher_id
+publisher_name
+address
+phone
+
+5. ISSUE_TRANSACTION
+--------------------------------
+transaction_id
+book_id
+reader_id
+issue_date
+return_date
+status
